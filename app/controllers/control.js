@@ -133,11 +133,15 @@ const ranking = async (req, res) => {
                 model: Partida,
                 as: 'user_winner',
                 attributes: [],
+                where: {		
+                     winner: {		
+                         [Op.ne]: null,		
+                     }		
+                 },
             },
             group: ['user.id'],
             order: [[Sequelize.col('vitorias'), 'DESC']],
         });
-        console.log(users);
         res.render('ranking', {
             users: users,
         });
