@@ -72,7 +72,7 @@ const partida = async function (req, res) {
                 id_user_1: req.session.user.id,
                 id_user_2: null,
                 winner: null,
-                fen: '8/8/8/8/8/6K1/4Q3/6k1 w - - 21 61', 
+                fen: 'rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1', 
             });
             res.redirect('/');
         } else {
