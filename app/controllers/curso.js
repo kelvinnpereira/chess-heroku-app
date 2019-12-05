@@ -48,7 +48,11 @@ module.exports = {
 		if (req.session.user) {
 			var cursoId = parseInt(req.params.id);
 			var curso = await Curso.findByPk(cursoId);
-			res.render('curso/read', { curso: curso });
+			var area = await Area.findByPk(curso.id_area);
+			curso.area = area.nome;
+			res.render('curso/read', {
+				curso: curso,
+			});
 		} else {
 			res.redirect('/login');
 		}

@@ -74,7 +74,7 @@ const partida = async function (req, res) {
                 winner: null,
                 fen: 'rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1', 
             });
-            res.redirect('/');
+            res.redirect('/partida/'+nova_partida.id);
         } else {
             var partidaObj = await Partida.findByPk(partidaId);
             if (partidaObj === undefined) {

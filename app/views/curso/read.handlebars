@@ -18,18 +18,22 @@
     <div class="row">
         <div class="col-sm">
             <table class="table table-hover">
-                <thead>
-                    <tr>
-                        <th scope="col">#</th>
-                        <th scope="col">Sigla</th>
-                        <th scope="col">Descrição</th>
-                    </tr>
-                </thead>
                 <tbody>
                     <tr>
-                        <th scope="row">{{curso.id}}</th>
+                        <th scope="row">Sigla</th>
                         <td>{{curso.sigla}}</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Nome</th>
+                        <td>{{curso.nome}}</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Descrição</th>
                         <td>{{curso.descricao}}</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Area</th>
+                        <td>{{curso.area}}</td>
                     </tr>
                 </tbody>
             </table>
