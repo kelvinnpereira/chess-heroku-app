@@ -446,6 +446,7 @@ pre {
 }
 
 #chess #chat-history .message {
+		word-break: break-word;
     font-weight: 700;
     background: #b58863;
     padding: 10px 12px;
@@ -454,7 +455,7 @@ pre {
     border-radius: 7px;
     margin-bottom: 4px;
     width: 90%;
-    position: relative
+    position: relative;
 }
 
 #chess #chat-history .message:after {
